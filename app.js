@@ -216,6 +216,7 @@ var drawPunchChart = (data) => {
 var main = function() {
   loadData().then(photos => {
     document.getElementById('loading').remove();
+    document.getElementById('graph-wrapper').style.display = 'block';
     var dates = photos.map((photo) => {
       return new Date(photo.t);
     });
