@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js' type='text/javascript'></script>
+        <script src="//cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.9.0/dist/progressbar.js"></script>
+        <style type="text/css">
+body {
+    background-color: #f2f3f4;
+}
+#graph-wrapper {
+    margin: 0 2%;
+    width: 90%;
+    background-color: white; 
+    padding: 0 40px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px white solid;
+} 
+.hover-circle:hover { 
+    fill: grey; 
+}
+
+#loading {
+    position: relative;
+    top: 20%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px white solid;
+    width: 10%;
+    height: 45%;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.progress {
+    width: 150px;
+    float: left;
+}
+        </style>
+    </head>
+    <body>
+        <div id="graph-wrapper">
+              <div id="graph"></div>
+        </div>
+        <div id='loading'>
+            <h3>Loading</h3>
+            <div class='progress' id='photo-progress'></div>
+        </div>
+        <script src='app.js' type='text/javascript'></script>
+    </body>
+</html>
